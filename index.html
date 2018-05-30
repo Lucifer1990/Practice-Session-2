@@ -1,0 +1,122 @@
+<div class="container-fluid insuranceContainer">
+    <!-- Here you need to design the new insurance and renew insurance containers using html, bootstrap and custom css classes. -->
+    <div class="container">
+        <div id="mainPart" class="row">
+            <div class="col-md-8 col-xs-12">
+                <div class="greyBG">
+                    <div class="row mb-2">
+                        <div class="col-md-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
+                                <label class="form-check-label" for="exampleRadios1">Get New Insurance</label>
+                            </div>
+                            <div class="alert alert-primary loader d-none" role="alert">
+                            Please wait while we fetch data...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="formPart">
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <label for="ddCarType">Select a Car Type</label>
+                                    <select required class="form-control" id="ddCarType" name="ddCarType" disabled>
+                                        <option value="">Please Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <label for="ddFuelType">Select a Fuel Type</label>
+                                    <select required class="form-control" id="ddFuelType" name="ddFuelType" disabled>
+                                        <option value="">Please Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <label for="ddRegistrationState">Select a State</label>
+                                    <select required class="form-control" id="ddRegistrationState" name="ddRegistrationState" disabled>
+                                        <option value="">Please Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <label for="txtUserName">Enter Your Name</label>
+                                    <div>
+                                        <input type="text" class="form-control" name="txtUserName" id="txtUserName" placeholder="Please enter your name" pattern="[A-Za-z\s]{2,15}" title="Enter Name min 2 max 15" maxlength="15" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <label for="txtPhoneNumber">Enter Your Mobile Number</label>
+                                    <div>
+                                        <input type="tel" class="form-control" name="txtPhoneNumber" id="txtPhoneNumber" placeholder="Please enter your phone number" pattern="[0-9]{10}" title="Phone Number" maxlength="10" disabled />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-12">
+                                <div class="form-group">
+                                    <input type="button" disabled id="btnSubmit" value="Get Quotes" class="btn btn-primary btn-block" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="dragPart" class="row d-none">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-12">
+                                    <div id="div1" class="card bg-faded mb-2 p-1 whiteBG" ondrop="drop(event,1)" ondragover="dragOver(event)">
+                                        <p class="mb-1">Insurance Plan</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <div id="div2" class="card bg-faded mb-3 p-1 whiteBG" ondrop="drop(event,2)" ondragover="dragOver(event)">
+                                        <p class="mb-1">To buy, drop your insurance policy here</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="button" id="btnSelectPlan" value="Buy Insurance" class="btn btn-primary" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12 right-col">
+                <div class="greyBG">
+                    <ul>
+                        <li><strong>Benefits</strong></li>
+                        <li>Easy</li>
+                        <li>Efficient</li>
+                        <li>Quick</li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+        <div id="msg"></div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>

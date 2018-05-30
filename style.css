@@ -1,0 +1,288 @@
+/* This body will cover you the whole background image css */
+body{
+background: url(/images/car.jpg)  no-repeat center center fixed;
+
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+/* This is the div for the Main Container Parent <div> */
+.insuranceContainer {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.headerDiv {
+    background-color: #adadad;
+    height: 60px;
+    padding-top: 10px;
+}
+
+.logo {
+    background: url("../images/sample_logo.png");
+    height: 50px;
+    width: 50px;
+    margin-left: 15px;
+
+}
+
+.footerDiv {
+    background-color: #adadad;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+/* This is the class selector for InsuranceFormContainer that is div for the formconatiner  */
+.insuranceFormContainer {
+    background: #F0F0F0;
+    margin-top: 45px;
+   /*  padding-top:50px; */
+    padding-bottom:50px;
+    margin-right: 40px;
+    box-shadow: 0px 3px 3px #BBBBBB;
+}
+/* This is the class selector for benefitsconatiner that is our second box in HTML */
+.benefitsContainer {
+
+    background: #F0F0F0;
+    margin-top: 39px;
+    margin-right: 40px;
+    padding-top:45px;
+    box-shadow: 0px 3px 3px #BBBBBB;
+    text-align: center;
+    padding-bottom:50px;
+	
+}
+/* This is the class selector for all the div's in the Html i.e., only InsuranceRow */
+.insuranceRow {
+    height: 75px;
+    padding-top: 10px;
+}
+/* This is the class selector for the second Box in the html i.e.,only BenefitsRow */
+.benefitsRow {
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* This is the class selector for all the Input edit text elements  */
+.fieldInsurance {
+    width: 95%;
+    margin-left: 20px;
+}
+/* This is the class selector for renewInsurance edit text Field */
+.fieldRenew {
+    width: 150px;
+    height: 33px;
+}
+/* This is the class selector for div element for the renewInsurance field */
+.divRenew {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.detailsCol div label {
+    font-weight: 300;
+}
+/* This is the  selector for the div GetQuotes */
+.get-quotes{
+    background: #ddd;
+}
+/*This is the class selector for the box conatiner div where we drag and drop the elements  */
+.box-container {
+    height: 200px;
+}
+
+.box-item {
+    width: 100%;
+    z-index: 1000
+}
+/* This is the class selector for buying the insurance div */
+.colBuyIns {
+    padding-top: 90px;
+}
+/* This is the class selector for div quotes panel where we are doing drag and drop*/
+.quotesPanel {
+    padding-bottom: 50px;
+}
+/* Class selector for the div failuremessage div error scenario */
+.failureMessageDiv {
+    color: red;
+    font-weight: 700;
+}
+/* Class selector for the div Validation error for getting the errors in the redcolor statements */
+.validationError {
+    color: red;
+}
+
+.validationHighlight {
+    border-color: red;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1050; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modelContent {
+    color: green;
+    font-weight: 700;
+}
+/* Class selector for making the proper adjustments between two boxes */
+.row{
+	margin-right:auto;
+	margin-left:5px;
+margin-bottom:20px;
+
+}
+
+.col-md-3{
+padding-top:.5em;
+padding-bottom:.5em;
+}
+
+.col-md-6 Tashan{
+display:block;
+}
+
+.Fan{
+position: fixed;
+    top: 0;
+    z-index: 10;
+}    
+    
+
+.d-none {
+    display: none;
+}
+.mb-1 {
+    margin-bottom: 1em
+}
+.mb-2 {
+    margin-bottom: 2em
+}
+.p-1 {
+    padding: 1em;
+}
+.p-3 {
+    padding: 3em;
+}
+.whiteBG {
+    background: #fff;
+}
+#mainPart {
+    margin-top: 3em
+}
+
+.greyBG {
+    background: #ebebeb;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#btnSubmit {
+  margin-top: 25px;
+}
+
+#div1,
+#div2 {
+  min-height: 300px;
+}
+
+.card {
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+}
+
+
+/* css Code for responsive table   */
+@media only screen and (max-width: 800px) {
+    
+    /* Force table to not be like tables anymore */
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#no-more-tables tr { border: 1px solid #ccc; }
+ 
+	#no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	#no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+    .right-col {
+        margin-top: 10px;
+    }
+ 
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
+
